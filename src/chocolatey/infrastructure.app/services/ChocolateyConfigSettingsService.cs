@@ -20,7 +20,6 @@ namespace chocolatey.infrastructure.app.services
     using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
-    using chocolatey.infrastructure.app.commands;
     using configuration;
     using infrastructure.services;
     using logging;
@@ -373,15 +372,11 @@ namespace chocolatey.infrastructure.app.services
 
             this.Log().Info("");
             this.Log().Info(ChocolateyLoggers.Important, "Sources");
-            this.Log().Warn(ChocolateyLoggers.Important, "DEPRECATION NOTICE");
-            this.Log().Warn(ChocolateyConfigCommand.DeprecatedConfigListResultsMessage);
             source_list(configuration);
             this.Log().Info("");
             this.Log().Info(@"NOTE: Use choco source to interact with sources.");
             this.Log().Info("");
             this.Log().Info(ChocolateyLoggers.Important, "Features");
-            this.Log().Warn(ChocolateyLoggers.Important, "DEPRECATION NOTICE");
-            this.Log().Warn(ChocolateyConfigCommand.DeprecatedConfigListResultsMessage);
             feature_list(configuration);
             this.Log().Info("");
             this.Log().Info(@"NOTE: Use choco feature to interact with features.");

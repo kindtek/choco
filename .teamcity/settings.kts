@@ -55,7 +55,7 @@ object Chocolatey : BuildType({
 
         script {
             name = "Call Cake"
-            scriptContent = "call build.official.bat --verbosity=diagnostic --target=CI --testExecutionType=all --shouldRunOpenCover=false"
+            scriptContent = "call build.official.bat --verbosity=diagnostic --target=CI"
         }
     }
 

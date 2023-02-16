@@ -160,6 +160,7 @@ namespace chocolatey.infrastructure.app
 
         public static class Tools
         {
+            //public static readonly string WebPiCmdExe = _fileSystem.combine_paths(InstallLocation, "nuget.exe");
             public static readonly string ShimGenExe = _fileSystem.combine_paths(InstallLocation, "tools", "shimgen.exe");
         }
 
