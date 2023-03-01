@@ -1,1 +1,0 @@
-Write-Output "$($MyInvocation.MyCommand.Name) hook ran for $env:PackageName $env:PackageVersion"
